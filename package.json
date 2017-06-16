@@ -1,0 +1,30 @@
+{
+  "name": "gym_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debugging": "DEBUG=*:* npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/fbokhari1890/project4.git"
+  },
+  "author": "fahim",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "isomorphic-fetch": "^2.2.1",
+    "method-override": "^2.3.8",
+    "morgan": "^1.8.1",
+    "nodemon": "^1.11.0",
+    "pg-promise": "^5.7.1"
+  }
+}
