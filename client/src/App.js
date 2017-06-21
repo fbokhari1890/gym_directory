@@ -32,7 +32,7 @@ class App extends Component {
     this.handleInputCountryChange = this.handleCountryChange.bind(this);
     this.handleGymSubmit = this.handleGymSubmit.bind(this);
   }
-}
+
 
 componentDidMount() 
 {
@@ -87,7 +87,9 @@ handleInputCountryChange(event)
 handleGymSubmit(event)
 {
   event.preventDefault();
-  fetch('https://gymlistings.herokuapp.com/api/gyms'), {
+
+
+  fetch('https://gymlistings.herokuapp.com/api/gyms', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
@@ -128,7 +130,7 @@ handleGymSubmit(event)
 
 render() 
 {
-
+return(
    <Router>
       <div className="App">
         <Header />
@@ -145,8 +147,9 @@ render()
         <Footer />
         </div>
          </Router>
+)
 }     
-    
+} 
 export default App;
 
 
