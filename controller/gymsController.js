@@ -85,3 +85,39 @@ gymsController.update = (req,res) => {
 
 
 module.exports = gymsController;
+
+
+
+
+
+// fetch from DB
+// .then(respnose) => {
+//   return response.json()
+// })
+// .then(json => {
+//   let address = json.street + ' ' + json.city + ' '+ etc....;
+//   fetch(from www.google.api/${jsondata})
+//   .then (response){
+//     return response.json()
+//   }
+//   .then(json) => {
+//     res.json({
+//       message: oksy,
+//       location: json
+//     })
+//   }
+// })
+//  fetchAllGym() {
+//     fetch('https://calm-earth-66639.herokuapp.com/api/gyms')
+//       .then((response) => {
+//         return response.json()
+//       })
+//       .then((responseJson) => {
+//         this.setState({
+//           gyms: responseJson.data.gyms,
+//         });
+//         console.log('in fetchAllGyms function', responseJson)
+//       }).catch((error) =>{
+//         console.log('fetchGyms error', error)
+//       })
+//   }
